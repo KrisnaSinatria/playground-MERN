@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Index() {
   const [products, setProducts] = useState([]);
@@ -11,7 +12,9 @@ function Index() {
   }, []);
 
   return (
-    <div style={{ padding: "20px",  }}>
+    <div style={{ padding: "20px", }}>
+      <Link to="/create">pindah</Link>
+
       <h1>Product List</h1>
       <ul>
         {products.map((p: any) => (

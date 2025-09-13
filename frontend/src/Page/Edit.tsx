@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios"
 import { useNavigate } from "react-router-dom";
 
-function App() {
-  const [products, setProducts] = useState([]);
+function Edit() {
   const [name, setName] = useState<string>()
   const [price, setPrice] = useState<number>()
   const [description, setDescription] = useState<string>()
@@ -12,6 +11,7 @@ function App() {
   const navigate = useNavigate()
 
   const Submit = (e: any) => {
+    e
     axios.post("http://localhost:3000/api/products", { name, price, description, category })
       .then((res) => {
         alert("success");
@@ -49,4 +49,4 @@ function App() {
   );
 }
 
-export default App;
+export default Edit;

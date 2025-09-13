@@ -4,16 +4,17 @@ import Create from "./Page/Create"
 import Edit from "./Page/Edit"
 
 function App() {
-  <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Index/>} />
-        <Route path="/create" element={<Create/> }/>
-        <Route path="/edit" element={<Edit/> }/>
-
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/edit" element={<Edit />} />
         </Routes>
-    </BrowserRouter>
-  </>
+      </BrowserRouter>
+    </div>
+  )
 }
 
 export default App;
