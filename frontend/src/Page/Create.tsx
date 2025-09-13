@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div style={{ padding: "20px",  }}>
-      <h1>Create Product</h1>
+      <h1>Create Produc</h1>
 
       <form action="">
         <div>
